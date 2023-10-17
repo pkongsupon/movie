@@ -15,6 +15,6 @@ class MovieMetaSeeder extends Seeder
     public function run()
     {
         //
-        \App\Models\MovieMeta::factory(config('constants.movie_meta.count'))->create();
+        \App\Models\MovieMeta::factory(config('constants.movie.count'))->create();
     }
 }

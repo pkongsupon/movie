@@ -7,9 +7,6 @@ return [
         ],
         'count' => 100
     ],
-    'movie_meta' => [
-        'count' => 200
-    ],
     'tag' => [
         'count' => 50
     ],

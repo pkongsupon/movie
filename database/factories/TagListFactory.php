@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TagListFactory extends Factory
 {
-    private static $movie_id = 1;
     /**
      * Define the model's default state.
      *
@@ -19,7 +18,7 @@ class TagListFactory extends Factory
     {
         return [
             //
-            'movie_id' => self::$movie_id++,
+            'movie_id' => rand(1, config('constants.movie.count')),
             'tag_id' => rand(1,config('constants.tag.count')),
         ];
     }
