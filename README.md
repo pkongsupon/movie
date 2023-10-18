@@ -16,23 +16,23 @@ install with composer : `composer install`
 ## API
 
 - An endpoint to expose all movies
-    - post method
-    - url : `api/get_movies`
+    - POST method
+    - URL : `api/get_movies`
 - An endpoint to expose all movies in a category
-    - post method
-    - url : `api/get_movie_by_category`
-    - parameter
+    - POST method
+    - URL : `api/get_movie_by_category`
+    - Parameter
         - int: `category_id`
 - An endpoint to expose all movies with a specific tag
-    - post method
-    - url : `api/get_movie_by_tag`
-    - parameter
+    - POST method
+    - URL : `api/get_movie_by_tag`
+    - Parameter
         - int: `tag_id`
 - An endpoint to expose all users
-    - post method
-    - url : `api/get_users`
+    - POST method
+    - URL : `api/get_users`
 - An endpoint to expose one single user’s details (with movies)
-    - post method
-    - url : `api/get_user_with_detail`
-    - parameter
+    - POST method
+    - URL : `api/get_user_with_detail`
+    - Parameter
         - int: `user_id`
