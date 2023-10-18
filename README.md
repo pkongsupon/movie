@@ -2,19 +2,22 @@
 
 ## Installing
 
-- install with composer
+install with composer
 
 `composer install`
 
 
-- create database
+create database
 
 `php artisan mysql:createdb`
 
-- migrate database
+
+migrate database
 
 `php artisan migrate`
 
-- mock up fake data
+
+mock up fake data
 
 `php artisan db:seed`
+
