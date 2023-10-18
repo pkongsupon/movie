@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('genre_id');
+            $table->text('website_theme');
             $table->timestamps();
         });
     }

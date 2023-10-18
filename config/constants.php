@@ -17,6 +17,6 @@ return [
         'count' => 100
     ],
     'user_list' => [
-        'count' => 200
+        'count' => 300
     ],
 ];

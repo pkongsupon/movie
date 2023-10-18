@@ -17,7 +17,6 @@ return new class extends Migration
             $table->increments('user_id');
             $table->string('email', 200);
             $table->string('phone', 50);
-            $table->text('website_theme');
             $table->timestamps();
         });
     }

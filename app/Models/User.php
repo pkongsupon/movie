@@ -42,4 +42,17 @@ class User extends Authenticatable
     // protected $casts = [
     //     'email_verified_at' => 'datetime',
     // ];
+
+    public function scopeSelectAll($query) {
+        return $query
+            ->select(
+                'user_id',
+                'email',
+                'phone',
+            );
+    }
+
+    public function scopeById($query, $user_id = 0) {
+        return $query->where('user_id', $user_id);
+    }
 }

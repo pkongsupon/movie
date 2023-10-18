@@ -24,6 +24,7 @@ class Movie extends Model
                 'movie.movie_id',
                 'movie.title',
                 'movie.description',
+                'g.genre_id',
                 'g.genre_name',
                 'movie.length',
                 'movie.released_date',
@@ -47,6 +48,7 @@ class Movie extends Model
         return $query
             ->when($tag_id, function($q, $tag_id) {
                 $q->leftJoin('tag_list as tl', 'movie.movie_id', '=', 'tl.movie_id')
+                  ->addSelect('tl.tag_id')
                   ->where('tl.tag_id', $tag_id)
                   ->groupBy('movie.movie_id');
             });

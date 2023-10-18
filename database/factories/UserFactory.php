@@ -20,7 +20,6 @@ class UserFactory extends Factory
         return [
             'email' => fake()->unique()->safeEmail(),
             'phone' => '0'.rand(100000000,999999999),
-            'website_theme' => fake()->url(),
         ];
     }
 }

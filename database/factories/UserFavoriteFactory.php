@@ -19,8 +19,9 @@ class UserFavoriteFactory extends Factory
     {
         return [
             //
-            'user_id' => self::$user_id++,
+            'user_id' => rand(1,config('constants.user.count')),
             'genre_id' => rand(1,15),
+            'website_theme' => fake()->url(),
         ];
     }
 }
